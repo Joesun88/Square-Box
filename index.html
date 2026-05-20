@@ -487,6 +487,10 @@ roughnessSlider.addEventListener("input", e => {
   roughnessValue.textContent = val.toFixed(2);
 });
 
+child.material = new THREE.MeshToonMaterial({
+    map: child.material.map,
+    color: child.material.color
+});
 </script>
 
 </body>
